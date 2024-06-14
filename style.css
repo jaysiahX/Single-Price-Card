@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Karla", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: #e0f7fa;
+}
+
+.pricing-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+  margin: 20px;
+  overflow: hidden;
+}
+
+.pricing-header {
+  text-align: left;
+  border-bottom: 1px solid #f0f0f0;
+  padding: 30px;
+  padding: auto;
+}
+
+.pricing-header p {
+  line-height: 1.8;
+  letter-spacing: -0.2;
+}
+
+.pricing-header h1 {
+  color: #2AB3B1;
+  font-size: 24px;
+  letter-spacing: -0,3px;
+
+}
+
+.pricing-header .guarantee {
+  color: #C0DF33;
+  font-size: 18px;
+  letter-spacing: -0.22;
+  font-weight: 600;
+  margin-top: 18px;
+}
+
+.pricing-header p {
+  color: #6c757d;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.2;
+  margin-top: 10px;
+}
+
+.pricing-body {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.pricing-plan,
+.why-us {
+  padding: 20px;
+  flex: 1;
+  padding: 30px;
+  text-align: left;
+  color: #fff;
+}
+
+.pricing-plan {
+  background-color: #2ab3b1;
+  padding: auto;
+}
+
+.pricing-plan h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  letter-spacing: -0.22px;
+  font-weight: 700;
+}
+
+.pricing-plan .price {
+  margin: 25px 0 10px 0;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+ 
+}
+
+.pricing-plan .price span {
+  font-size: 16px;
+  letter-spacing: -0.2px;
+  line-height: 26px;
+  font-weight: 400;
+  opacity: 0.5;
+}
+
+.pricing-plan p {
+  margin: 0 0 28px 0;
+  font-weight: 400;
+  letter-spacing: -0.2px;
+  font-size: 400;
+  line-height: 24px;
+
+}
+
+.btn-signup {
+  background-color: #c0df33;
+  color: white;
+  border: none;
+  padding: 16px 20px;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 16px;
+  letter-spacing: -0.2px;
+  font-weight: 700;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-signup:hover {
+  background-color: #b1cf2d;
+}
+
+.why-us {
+  background-color: #4abfbd;
+  padding: auto;
+}
+
+.why-us h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  letter-spacing: -0.22px;
+  font-weight: 700;
+}
+
+.why-us ul {
+  list-style-type: none;
+  text-align: left;
+  padding: 0;
+}
+
+.why-us li {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #ffffff;
+  letter-spacing: -0.17px;
+  line-height: 20px;
+  opacity: 0.75;
+}
+
+@media (min-width: 768px) {
+  .pricing-body {
+    flex-direction: row;
+  }
+  .pricing-header .guarantee {
+    margin-bottom: 2px;
+
+  }
+}
+
+@media (max-width: 768px) {
+  .pricing-card {
+    margin: 50px;
+    border-radius: 8px 8px 0 0;
+  }
+  .pricing-header h1 {
+    font-size: 20px;
+    letter-spacing: -0,25px;
+    margin-bottom: 24px;
+  }
+  
+  .pricing-header .guarantee {
+     font-size: 15px;
+    line-height: 20px;
+    letter-spacing: -0.19;
+  }
+
+  .pricing-header p {
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: -0.17;
+    margin-bottom: 15px;
+    color: #9AA7BE;
+  }
+
+}
